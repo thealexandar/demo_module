@@ -1,0 +1,15 @@
+demo_module.welcome:
+  path: '/welcome'
+  defaults:
+    _controller: 'Drupal\demo_module\Controller\WelcomeController::welcome'
+    _title: 'Welcome to techX session'
+  requirements:
+    _permission: 'access content'
+
+custom_form.admin:
+  path: '/admin/config/system/custom_form'
+  defaults:
+    _title: 'Custom Form'
+    _form: '\Drupal\demo_module\Form\CustomForm'
+  requirements:
+    _permission: 'administer site configuration'

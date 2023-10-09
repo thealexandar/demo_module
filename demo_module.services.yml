@@ -1,0 +1,3 @@
+services:
+  demo_module.article_service:
+    class: Drupal\demo_module\ArticleService
